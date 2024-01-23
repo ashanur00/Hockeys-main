@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey</title>
+    <!-- tilwind and daisy ui cdm -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'main-color': '#FF4240',
+                        'rgb': '#13131899',
+                        'rgb-color': '#13131880',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-family {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-family">
+
+    <header class="container mx-auto">
+        <nav class="mb-10">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a><span class="text-main-color">Home</span></a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost sm:text-3xl lg:text-4xl font-extrabold">Hockey<span
+                            class="text-main-color">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a><span class="text-main-color">Home</span></a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-2">
+                    <div class="lg:"><a><img src="Images/Frame.svg" alt=""></a></div>
+                    <a class="btn text-white bg-main-color">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <div>
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto">
+        <!-- featured section -->
+        <section class="text-center">
+            <hr class="mt-28 mb-8">
+            <h2 class="text-4xl font-extrabold">Professional Hockeys Club</h2>
+            <p class="mt-6 text-sm text-rgb">The Men's FIH Hockey World Cup is an international field hockey competition
+                <br>
+                organised by the International Hockey Federation (FIH). <br>
+                The tournament was started in 1971.
+                Pakistan is the most successful team, having won the tournament four times.
+            </p>
+            <hr class="mt-8 mb-12">
+            <div class="grid gap-6 grid-cols-1 sm:grid-cols-1 lg:grid-cols-4">
+                <div class="card p-8 bg-base-100">
+                    <figure>
+                        <div class="radial-progress text-blue-700" style="--value:90;" role="progressbar">90%</div>
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-xl font-semibold">Prayer Facility</h2>
+                        <p class="text-rgb text-sm">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                    </div>
+                </div>
+                <div class="card p-8 bg-base-100">
+                    <figure>
+                        <div class="radial-progress text-green-600" style="--value:95;" role="progressbar">95%</div>
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-xl font-semibold">Experienced Coach</h2>
+                        <p class="text-rgb text-sm">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                    </div>
+                </div>
+                <div class="card p-8 bg-base-100">
+                    <figure>
+                        <div class="radial-progress text-red-700" style="--value:70;" role="progressbar">70%</div>
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-xl font-semibold">Senior Player</h2>
+                        <p class="text-rgb text-sm">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                    </div>
+                </div>
+                <div class="card p-8 bg-base-100">
+                    <figure>
+                        <div class="radial-progress text-red-500" style="--value:80;" role="progressbar">80%</div>
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="text-xl font-semibold">Training Ground</h2>
+                        <p class="text-rgb text-sm">Amet consectetur. Condimentum dignissim adipiscing.</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <hr class="mt-24 mb-8">
+        <section class="items-center">
+            <div class="text-center">
+                <h2 class="text-4xl font-extrabold">Program Sections</h2>
+                <p class="mt-6 text-sm text-rgb">The FIH Men's Hockey World Cup 2023 is set to begin with Rio 2016
+                    Olympic
+                    champions Argentina taking
+                    on South Africa at the<br> Kalinga Stadium in Bhubaneswar on January 13.</p>
+            </div>
+            <hr class="mt-8 mb-12">
+            <div class="grid gap-7 grid-cols-1 sm:grid-cols-1 lg:grid-cols-2">
+                <div class="card lg:max-w-xl bg-rgb-color  image-full">
+                    <figure><img src="Images/2.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-2xl font-extrabold">Junior Program</h2>
+                        <p class="font-medium text-white">The 2023 Men's FIH Hockey Junior World Cup was the 13th
+                            edition of the Men's
+                            FIH Hockey Junior World Cup, the biennial men's under-21 field hockey world
+                            championship organized by the International Hockey Federation. It was held
+                            at the Malaysia National Hockey
+                            Stadium in Kuala Lumpur, Malaysia from 5 to 16 December 2023.</p>
+                        <div class="card-actions">
+                            <button class="btn bg-main-color text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card lg:max-w-xl bg-rgb-color image-full">
+                    <figure><img src="Images/3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-2xl font-extrabold text-white">Teenager Program</h2>
+                        <p class="font-medium text-white">When I went into the changeroom,
+                            I saw girls from all over the world. That was kind of relieving because I didn’t feel like
+                            an outsider.
+                            I was like, ‘Oh, I belong with them.’ We were all beginners.</p>
+                        <div class="card-actions">
+                            <button class="btn bg-main-color text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="card lg:max-w-6xl mt-8 bg-rgb-color image-full">
+                    <figure><img src="Images/4.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="text-2xl font-extrabold text-white">Professional Program</h2>
+                        <p class="font-medium text-white">As hockey continues to get faster and more dynamic,
+                            the physical demands on hockey players have never been higher.
+                            Much like the evolution of the game on the ice, there’s been an evolution of
+                            training off the ice. Gone are the days of “body part” focused workouts,
+                            half-assed strength workouts, or going for the occasional jog.
+                            Today’s elite players are training in a completely different way.
+                            They’re using integrative workouts to train kinetic chains, they’re refining
+                            their movement quality, they’re getting savagely strong while remaining lean, mobile, and
+                            quick.
+                        <div class="card-actions">
+                            <button class="btn bg-main-color text-white">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="mt-24 mb-8">
+        <section>
+            <div class="text-center">
+                <h2 class="text-4xl font-extrabold">Our New Products</h2>
+                <p class="text-rgb mt-4">Keep tabs on the newest product releases from all of
+                    the top hockey brands! Learn about the latest gear and discover <br>
+                    which NHL players have already picked it up!</p>
+            </div>
+            <hr class="mt-8 mb-12">
+
+            <div class="grid gap-6 grid-cols-1 sm:grid-cols-1 lg:grid-cols-2">
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="Images/5.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex"><img class="w-6" src="Images/Frame.png" alt="">
+                            <p class="text-rgb">5.0</p>
+                            <img src="Images/Frame (1).png" alt="">
+                            <p class="text-rgb">30k</p>
+                            <img src="Images/Frame (2).png" alt="">
+                            <p class="text-rgb">2k</p>
+                        </div>
+                        <h2 class="text-2xl font-extrabold">varsity jacket</h2>
+                        <p class="font-medium text-sm text-rgb">New Varsity Jackets for sale in Tipurdi.</p>
+                        <div class="flex">
+                            <p class="text-xl font-extrabold text-main-color">Price - $22.00</p>
+                            <img src="Images/Frame.svg" alt="">
+                            <p class="text-rgb font-normal text-sm">Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="Images/6.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex"><img class="w-6" src="Images/Frame.png" alt="">
+                            <p class="text-rgb">5.0</p>
+                            <img src="Images/Frame (1).png" alt="">
+                            <p class="text-rgb">30k</p>
+                            <img src="Images/Frame (2).png" alt="">
+                            <p class="text-rgb">2k</p>
+                        </div>
+                        <h2 class="text-2xl font-extrabold">Football</h2>
+                        <p class="font-medium text-sm text-rgb">Sport:Soccer Color: green- Mixed Size:5 Material:TPU Age range:All</p>
+                        <div class="flex">
+                            <p class="text-xl font-extrabold text-main-color">Price - $30.00</p>
+                            <img src="Images/Frame.svg" alt="">
+                            <p class="text-rgb font-normal text-sm">Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="Images/7.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex"><img class="w-6" src="Images/Frame.png" alt="">
+                            <p class="text-rgb">5.0</p>
+                            <img src="Images/Frame (1).png" alt="">
+                            <p class="text-rgb">30k</p>
+                            <img src="Images/Frame (2).png" alt="">
+                            <p class="text-rgb">2k</p>
+                        </div>
+                        <h2 class="text-2xl font-extrabold">Cap</h2>
+                        <p class="font-medium text-sm text-rgb"> Embroidered Baseball Cap</p>
+                        <div class="flex">
+                            <p class="text-xl font-extrabold text-main-color">Price - $15.00</p>
+                            <img src="Images/Frame.svg" alt="">
+                            <p class="text-rgb font-normal text-sm">Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="Images/8.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex"><img class="w-6" src="Images/Frame.png" alt="">
+                            <p class="text-rgb">5.0</p>
+                            <img src="Images/Frame (1).png" alt="">
+                            <p class="text-rgb">30k</p>
+                            <img src="Images/Frame (2).png" alt="">
+                            <p class="text-rgb">2k</p>
+                        </div>
+                        <h2 class="text-2xl font-extrabold">jersey</h2>
+                        <p class="font-medium text-sm text-rgb">We are committed to providing our customers with the best Player edition jerseys.</p>
+                        <div class="flex">
+                            <p class="text-xl font-extrabold text-main-color">Price - $50.00</p>
+                            <img src="Images/Frame.svg" alt="">
+                            <p class="text-rgb font-normal text-sm">Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="Images/9.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex"><img class="w-6" src="Images/Frame.png" alt="">
+                            <p class="text-rgb">5.0</p>
+                            <img src="Images/Frame (1).png" alt="">
+                            <p class="text-rgb">30k</p>
+                            <img src="Images/Frame (2).png" alt="">
+                            <p class="text-rgb">2k</p>
+                        </div>
+                        <h2 class="text-2xl font-extrabold">Hockey helmets</h2>
+                        <p class="font-medium text-sm text-rgb"> Hockey helmets in sizes XS–XL.The best hockey helmets you can buy.</p>
+                        <div class="flex">
+                            <p class="text-xl font-extrabold text-main-color">Price - $100.00</p>
+                            <img src="Images/Frame.svg" alt="">
+                            <p class="text-rgb font-normal text-sm">Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-side bg-base-100 shadow-xl">
+                    <figure><img src="Images/10.png" alt="Movie" /></figure>
+                    <div class="card-body">
+                        <div class="flex"><img class="w-6" src="Images/Frame.png" alt="">
+                            <p class="text-rgb">5.0</p>
+                            <img src="Images/Frame (1).png" alt="">
+                            <p class="text-rgb">30k</p>
+                            <img src="Images/Frame (2).png" alt="">
+                            <p class="text-rgb">2k</p>
+                        </div>
+                        <h2 class="text-2xl font-extrabold">varsity jacket</h2>
+                        <p class="font-medium text-sm text-rgb">Sport:Soccer Color: balck nad text-white Mixed Size:5 Material:TPU Age range:All</p>
+                        <div class="flex">
+                            <p class="text-xl font-extrabold text-main-color">Price - $30.00</p>
+                            <img src="Images/Frame.svg" alt="">
+                            <p class="text-rgb font-normal text-sm">Delivery Fee : Free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
